@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polyacademy</title>
+    <link rel="stylesheet" href="/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3b1b35b1c3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS de Select2 -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <!-- JS de Select2 y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#"
+          ><img class="logo" src="./assets/logo.webp" alt="Polyacademy home"
+        /></a>
+        <div class="navbar__container">
+          <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#como-funciona">Cómo Funciona</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li>
+              <a href="#contacto"><i class="fa-solid fa-at"></i>Contactos</a>
+            </li>
+            <li><a href="#login" id="login">Login</a></li>
+          </ul>
+          <button class="menu__sigin__button">SING IN</button>
+          <img class="menu__burger" src="./assets/svg/menu.svg" alt="menu" />
+        </div>
+      </nav>
+
+      <section class="introduction__home">
+        <div class="squares"></div>
+        <div class="introduction__home__texts">
+          <img src="./assets/yellow-zigzag.webp" alt="" />
+          <h2 class="title__section">
+            SPEAK WITH NO<span class="no__limits"> LIMITS</span>
+          </h2>
+
+          <ul class="introduction__home__items__description">
+            <li>
+              <img src="./assets/svg/check.svg" alt="" />Clases disponibles 24
+              horas al día
+            </li>
+            <li>
+              <img src="./assets/svg/check.svg" alt="" />Practica tu
+              conversación y obtén feedback
+            </li>
+            <li>
+              <img src="./assets/svg/check.svg" alt="" />Aprende a tu propio
+              ritmo
+            </li>
+          </ul>
+          <p class="introduction__question">¿Qué curso te gustaría tomar?</p>
+          <form class="options">
+            <select id="opciones" name="opciones">
+              <option
+                value="GeneralEnglish"
+                data-image="./assets/circle-flags_us.webp"
+              >
+                General English
+              </option>
+              <option
+                value="BusinessEnglish"
+                data-image="./assets/flat-color-icons_briefcase.webp"
+              >
+                Business English
+              </option>
+              <option
+                value="purposes"
+                data-image="./assets/flat-color-icons_folder.webp"
+              >
+                English for specific purposes
+              </option>
+            </select>
+          </form>
+          <div class="gift">
+            <img src="./assets/svg/present.svg" alt="" />
+            <p>¡Toma tu clase de prueba gratis!</p>
+          </div>
+        </div>
+        <img class="student__img" src="./assets/student.webp" alt="" />
+        <div class="square_green"></div>
+      </section>
+    </header>
+    <main>
+      <section class="why_us">
+        <h1>¿POR QUÉ <span class="title_span">POLY ACADEMY?</span></h1>
+        <div class="benefits">
+          <img
+            class="benefits__item item__1"
+            src="./assets/Group 640.webp"
+            alt=""
+          />
+          <img class="conect_benefits" src="./assets/Group-319.webp" alt="" />
+          <img
+            class="benefits__item item__2"
+            src="./assets/Group 641.webp"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="who__are__we">
+        <div class="who__are__we__container">
+          <div class="container__img">
+            <img class="teacher" src="/assets/teacher.webp" alt="" />
+            <div>
+              <img class="tutor" src="/assets/tutor.webp" alt="" />
+              <div class="amount_students">
+                <img src="/assets/ph_student-bold.webp" alt="" />
+                <div>
+                  <p class="number__Students">2,340</p>
+                  <p>Successful Students</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="who__are__we__speak">
+            <h3>¿Quiénes somos?</h3>
+            <h2 class="title__section">
+              Te ayudamos a hablar con el <span class="title_span">mundo</span>
+            </h2>
+            <p class="who__are__we__description">
+              Somos un curso de idiomas en línea diseñado para personas sin
+              conocimiento previo del idioma inglés. Nuestra misión es mejorar
+              tu vida a través del idioma y darte la libertad de navegar el
+              mundo sin límites. Nuestro curso construye una base sólida tanto
+              en el habla como en la comprensión del inglés. Serás guiado a
+              través de videos, audios y actividades interactivas para entender
+              completamente los matices del idioma. Nuestra IA integrada te
+              ayudará a practicar todos los aspectos comunicativos y situaciones
+              de la vida real, asegurando que desarrolles fluidez y confianza
+              tanto en contextos profesionales como generales.
+            </p>
+            <ul>
+              <li>
+                <img src="/assets/svg/typcn_tick.svg" alt="" />
+                Inmersión total
+              </li>
+              <li>
+                <img src="/assets/svg/typcn_tick.svg" alt="" />
+                Enfoque comunicativo
+              </li>
+              <li>
+                <img src="/assets/svg/typcn_tick.svg" alt="" />
+                Acceso de por vida
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="our_courses">
+        <video class="nuestros cursos" src=""></video>
+        <h3>Nuestros Cursos</h3>
+      </section>
+      <section class="help_you">
+        <h2>
+          ¿Estás interesado en aprender inglés?
+          <span class="title_span">¡Te ayudamos!?</span>
+        </h2>
+        <img class="help_you__zigzag" src="/assets/yellow-zigzag.webp" alt="" />
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="card__container" id="first__card">
+                <div class="card">
+                  <div class="body__container">
+                    <h3 class="title__card">General English</h3>
+                    <div class="container__card">
+                      <div class="body__Card">
+                        <img
+                          class="zigzag"
+                          src="./assets/yellow-zigzag.webp"
+                          alt=""
+                        />
+                        <p class="card__description">
+                          Mejora tus habilidades de inglés para el día a día con
+                          lecciones interesantes de conversación, comprensión
+                          auditiva, lectura y escritura. ¡Ya sean conversaciones
+                          cotidianas o viajes, General English te ayuda a
+                          aprender inglés!
+                        </p>
+                        <button class="learn__more__button">LEARN MORE</button>
+                      </div>
+                      <img class="book" src="./assets/book.webp" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="footer__card__container">
+                    <div class="footer__Card__items">
+                      <img class="cam__img" src="/assets/cam.webp" alt="" />
+                      <div class="footer__Card__description__container">
+                        <h4>Video Lessons</h4>
+                        <p>Video guided lessons from 0 to B2</p>
+                      </div>
+                    </div>
+                    <div class="footer__Card__items">
+                      <img class="chat__img" src="/assets/chat.webp" alt="" />
+                      <div class="footer__Card__description__container">
+                        <h4>Speaking Practice</h4>
+                        <p>
+                          Great deal of speaking activities with personal
+                          assistant
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="img__card"
+                  src="/assets/bbiddac-unsplash.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="card__container" id="second__card">
+                <div class="card">
+                  <div class="body__container">
+                    <h3 class="title__card">Business English</h3>
+                    <div class="container__card">
+                      <div class="body__Card">
+                        <img
+                          class="zigzag"
+                          src="./assets/yellow-zigzag.webp"
+                          alt=""
+                        />
+                        <p class="card__description">
+                          “Master the language of success with our Business
+                          English course. Perfect your communication skills for
+                          meetings, presentations, and negotiations. Speak the
+                          language of leaders!”
+                        </p>
+                        <button class="learn__more__button">LEARN MORE</button>
+                      </div>
+                      <img
+                        class="book"
+                        src="./assets/business_english.webp"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="footer__card__container">
+                    <div class="footer__Card__items">
+                      <img class="cam__img" src="/assets/cam.webp" alt="" />
+                      <div class="footer__Card__description__container">
+                        <h4>Video Lessons</h4>
+                        <p>Video guided lessons from 0 to B2</p>
+                      </div>
+                    </div>
+                    <div class="footer__Card__items">
+                      <img class="chat__img" src="/assets/chat.webp" alt="" />
+                      <div class="footer__Card__description__container">
+                        <h4>Speaking Practice</h4>
+                        <p>
+                          Great deal of speaking activities with personal
+                          assistant
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img class="img__card" src="/assets/study.webp" alt="" />
+              </div>
+            </div>
+
+            <!-- slide 3 -->
+            <div class="swiper-slide">
+              <div class="card__container" id="third__card">
+                <div class="card">
+                  <div class="body__container">
+                    <h3 class="title__card">ESP courses</h3>
+                    <div class="container__card">
+                      <div class="body__Card">
+                        <img
+                          class="zigzag"
+                          src="./assets/yellow-zigzag.webp"
+                          alt=""
+                        />
+                        <p class="card__description">
+                          “Tailored to your industry, our ESP courses teach you
+                          the exact language you need—whether it’s healthcare,
+                          law, tech, or more. Speak like a pro in your field!”
+                        </p>
+                        <button class="learn__more__button">LEARN MORE</button>
+                      </div>
+                      <img class="book" src="./assets/astronauta.webp" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="footer__card__container">
+                    <div class="footer__Card__items">
+                      <img class="cam__img" src="/assets/cam.webp" alt="" />
+                      <div class="footer__Card__description__container">
+                        <h4>Video Lessons</h4>
+                        <p>Video guided lessons from 0 to B2</p>
+                      </div>
+                    </div>
+                    <div class="footer__Card__items">
+                      <img class="chat__img" src="/assets/chat.webp" alt="" />
+                      <div class="footer__Card__description__container">
+                        <h4>Speaking Practice</h4>
+                        <p>
+                          Great deal of speaking activities with personal
+                          assistant
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img class="img__card" src="/assets/paint.webp" alt="" />
+              </div>
+            </div>
+
+            <!-- slide 4 -->
+            <div class="swiper-slide">
+              <div class="card__container" id="fourth__card">
+                <div class="card">
+                  <div class="body__container">
+                    <h3 class="title__card">Mini courses</h3>
+                    <div class="container__card">
+                      <div class="body__Card">
+                        <img
+                          class="zigzag"
+                          src="./assets/yellow-zigzag.webp"
+                          alt=""
+                        />
+                        <p class="card__description">
+                          Quick, fun, and focused! Our mini courses zero in on
+                          specific topics like travel, socializing, or job
+                          interviews. Bite-sized learning for big results!
+                        </p>
+                        <button class="learn__more__button">LEARN MORE</button>
+                      </div>
+                      <img class="book" src="./assets/book.webp" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="footer__card__container">
+                    <div class="footer__Card__items">
+                      <img class="cam__img" src="/assets/cam.webp" alt="" />
+                      <div class="footer__Card__description__container">
+                        <h4>Video Lessons</h4>
+                        <p>Video guided lessons from 0 to B2</p>
+                      </div>
+                    </div>
+                    <div class="footer__Card__items">
+                      <img class="chat__img" src="/assets/chat.webp" alt="" />
+                      <div class="footer__Card__description__container">
+                        <h4>Speaking Practice</h4>
+                        <p>
+                          Great deal of speaking activities with personal
+                          assistant
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img class="img__card" src="/assets/girl_student.webp" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Botones de navegación opcionales -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <button class="all__courser__button">Ver todos los cursos</button>
+      </section>
+      <section class="your__level">
+        <div class="your__level__container">
+          <img src="/assets/yellow-zigzag.webp" alt="" />
+          <h2>¿NO SABES EN QUE <span>NIVEL ESTÁS?</span></h2>
+          <p>Haz esta prueba de nivel para saber por dónde empezar</p>
+          <button aria-label="Iniciar la clase de prueba">
+            Empezar la prueba
+          </button>
+        </div>
+      </section>
+      <section class="free_class">
+        <div class="free_class__container">
+          <h2>¿YA SABES TU <span>NIVEL?</span></h2>
+          <p>Te invitamos a tomar tu clase de prueba gratis</p>
+          <button aria-label="Accede a una clase gratuita">Clase gratis</button>
+        </div>
+      </section>
+
+    </main>
+    <footer></footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
+
